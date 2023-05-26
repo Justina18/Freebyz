@@ -4,3 +4,17 @@ copyButton.addEventListener('click', function() {
   navigator.clipboard.writeText(text); // Use the Clipboard API to write the text to the clipboard
   console.log('Text copied: ' + text); // Optional: log the copied text
 });
+
+
+const input = document.getElementById('myInput');
+const error = document.getElementById('error');
+
+input.addEventListener('blur', function() {
+  if (input.value === '') {
+    error.textContent = 'Please enter a value.';
+  }
+});
+
+input.addEventListener('focus', function() {
+  error.textContent = '';
+});

@@ -389,12 +389,21 @@
       background-color: #EEF0F2;
       border: 1px solid #ccc;
     }
-
+    .wallet-fund-holder{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
     .wallet-fund{
-      width: 90%;
+      width: 55%;
+      height: 50%;
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      align-items: start;
+      flex-wrap: wrap;
+      flex-direction: column;
       padding: 10px;
       background-color: #fff;
       border-radius: 8px;
@@ -405,8 +414,14 @@
       outline: none;
       background-color: #11101d;
       border-radius: 12px;
-      width: 70px;
+      width: 120px;
       padding: 5px;
+    }
+    .wallet-fund section{
+      width: 100%;
+      flex-wrap: wrap;
+      display: flex;
+      justify-content: space-between;
     }
     .wallet-fund-icon {
       width: 90%;
@@ -425,6 +440,10 @@
       justify-content: space-between;
       align-items: center ;
     }
+    .wallet-fund h5{
+      flex-wrap: wrap;
+      display: flex;
+    }
     .wallet-icons-hold{
       display: flex;
       flex-direction: column;
@@ -434,3 +453,24 @@
     .wallet-fund-icon p{
       font-size: small;
     }
+    .fund-inp{
+      display: flex;
+    gap: 8px;
+    }
+    #error {
+      color: red;
+      font-size: 14px;
+      margin-top: 5px;
+    }
+
+
+    @media (max-width: 768px) {
+      .wallet-fund h5{
+        font-size: small;
+      }
+      .wallet-fund{
+        width: 65%;
+        height: 50%;
+      }
+    }
+    
