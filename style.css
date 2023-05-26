@@ -408,6 +408,25 @@
       background-color: #fff;
       border-radius: 8px;
     }
+    .wallet-funds{
+      width: 95%;
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      flex-wrap: wrap;
+      padding: 10px;
+      background-color: #fff;
+      border-radius: 8px;
+    }
+    .wallet-funds button{
+      color: #fff;
+      border: none;
+      outline: none;
+      background-color: #11101d;
+      border-radius: 12px;
+      width: 120px;
+      padding: 5px;
+    }
     .wallet-fund button{
       color: #fff;
       border: none;
