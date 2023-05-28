@@ -548,6 +548,14 @@
   background-color: #D8E9F9;
   border-color: #D8E9F9;
 }
+.wallet-funds a{
+  text-decoration: none;
+  color: #fff;
+}
+.wallet-funds a :hover{
+  color: #fff;
+
+}
 @media (max-width: 768px) {
   .contained-wrap {
     display: flex;
