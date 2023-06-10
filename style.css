@@ -394,7 +394,7 @@
   background-color: #eef0f2;
   border: 1px solid #ccc;
 }
-.box div{
+.box div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -493,34 +493,7 @@
   margin-top: 5px;
 }
 
-.tabs {
-  display: flex;
-}
-.tab {
-  padding: 10px;
-  background-color: #ccc;
-  cursor: pointer;
-}
-
-.nav-link{
-  padding: 5px;
-}
-
-/* .nav-link:hover{
- background-color: #1d1b31;
- color: #fff;
- font-weight: 700;
-} */
-
-.tab-content {
-  display: none;
-}
-
-.tab-content.active {
-  display: block;
-}
-
-.avail-tabs{
+.avail-tabs {
   width: 90%;
   background-color: #fff;
   padding: 10px;
@@ -530,9 +503,43 @@
   flex-direction: column;
 }
 
-.content{
+.content {
   margin-left: 20px;
   overflow: scroll;
+}
+
+.alert-inf {
+  color: #245686;
+  background-color: #d8e9f9;
+  border-color: #d8e9f9;
+}
+.wallet-funds a {
+  text-decoration: none;
+  color: #fff;
+}
+.wallet-funds a :hover {
+  color: #fff;
+}
+tr {
+  height: 60px;
+}
+tbody tr:hover {
+  cursor: pointer;
+  background-color: #f3f7f7;
+}
+.more-jobs {
+  height: 40px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: stretch;
+  margin-top: 8px;
+}
+.more-jobs a {
+  font-size: larger;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  color: #11101d;
 }
 
 .footer {
@@ -542,19 +549,6 @@
   width: 100%;
   height: 80px;
   background-color: #fff;
-}
-.alert-inf{
-  color: #245686;
-  background-color: #D8E9F9;
-  border-color: #D8E9F9;
-}
-.wallet-funds a{
-  text-decoration: none;
-  color: #fff;
-}
-.wallet-funds a :hover{
-  color: #fff;
-
 }
 @media (max-width: 768px) {
   .contained-wrap {
