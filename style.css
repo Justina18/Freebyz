@@ -541,6 +541,13 @@ tbody tr:hover {
   text-decoration: none;
   color: #11101d;
 }
+.container a {
+  font-size: larger;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  color: #11101d;
+}
 
 .footer {
   display: flex;
@@ -549,6 +556,15 @@ tbody tr:hover {
   width: 100%;
   height: 80px;
   background-color: #fff;
+}
+
+.Specific-body{
+  width: 90%;
+}
+.Specific-body-head{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 @media (max-width: 768px) {
   .contained-wrap {

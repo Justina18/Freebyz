@@ -16,6 +16,18 @@
         .img-icon {
             width: 78px;
         }
+
+        #message {
+            display: none;
+            justify-content: center;
+            align-items: center;
+            margin-top: 8px;
+            padding: 6px;
+            background-color: #edf0f7;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 700;
+        }
     </style>
 </head>
 
@@ -194,18 +206,21 @@
 
             <div class="copy">
                 <span class="shift"> https://www.freebyz.com/register/cPkZxpE</span>
-                <button id="copy-button" class="button" data-copy-text="https://www.freebyz.com/register/cPkZxpE">
+                <button onclick="showMessage()" id="copy-button" class="button"
+                    data-copy-text="https://www.freebyz.com/register/cPkZxpE">
                     <i class='bx bx-copy'></i>
                 </button>
             </div>
+            <div id="message">Text Copied <i style="color: #3DBA4E; font-size: 30px;" class='bx bx-check'></i> </div>
+
 
             <div class="how">
                 <h5>Here's a video on how to make money on freebyz:</h5>
                 <iframe width="80%" height="200" src="https://www.youtube.com/embed/hvy02mfgg2I?controls=0"
                     title="How to make money with freebyz - YouTube" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-
+                    allowfullscreen>
+                </iframe>
             </div>
             <div class="alert alert-inf mt-3">
                 Login Points: You'll get 50 points on daily login! You can redeem the points to win cash and amazing
@@ -224,7 +239,7 @@
                     <li class="list-inline-item">• AY gets 50 login points</li>
                     <li class="list-inline-item">• S.O gets 50 login points</li>
                     <li class="list-inline-item">• H.s gets 50 login points.</li>
-                    <li class="list-inline-item">• Justina gets 50 login points</li>   
+                    <li class="list-inline-item">• Justina gets 50 login points</li>
                     <li class="list-inline-item">• Teemah gets 50 login points</li>
                     <li class="list-inline-item">• S.O gets 50 login points</li>
                     <li class="list-inline-item">• H.s gets 50 login points</li>
@@ -271,57 +286,57 @@
                     </div>
                 </a>
                 <div class="col-md-4">
-                    <div class="box ">
+                    <a href="./Specific Jobs/IG.html" class="box ">
                         <img src="/image/IG.png" class="img-icon" alt="IG Logo">
                         <div>
                             <h3 class="fs-4">Instagram</h3>
                             <p class="fs-5">Jobs</p>
                         </div>
 
-                    </div>
+                    </a>
                 </div>
                 <div class="col-md-4">
-                    <div class="box">
+                    <a href="./Specific Jobs/palmpay.html" class="box">
                         <img src="/image/palmpay.png" class="img-icon" alt="Palmpay Logo">
                         <div>
                             <h3 class="fs-4">Palmpay</h3>
                             <p class="fs-5">Jobs</p>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
             <div class="row ">
                 <div class="col-md-4">
-                    <div class="box ">
+                    <a href="./Specific Jobs/FB.html" class="box ">
                         <i class='bx bxl-facebook' style="color: #1672E6;font-size: 78px;"></i>
                         <div>
                             <h3 class="fs-4">Facebook</h3>
                             <p class="fs-5">Jobs</p>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="col-md-4">
-                    <div class="box ">
+                    <a href="./Specific Jobs/youtube.html" class="box ">
                         <i class='bx bxl-youtube' style="color: #e40101 ;font-size: 78px;"></i>
                         <div>
                             <h3 class="fs-4">Youtube</h3>
                             <p class="fs-5">Jobs</p>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="col-md-4">
-                    <div class="box">
+                    <a href="./Specific Jobs/Tiktok.html" class="box">
                         <img src="/image/tiktok.png" class="img-icon" alt="Tiktok Logo">
                         <div>
                             <h3 class="fs-4">Tiktok</h3>
                             <p class="fs-5">Jobs</p>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
             <div class="more-jobs">
-                <a href="./jobs.html" >
-                    More Jobs 
+                <a href="./jobs.html">
+                    More Jobs
                 </a> <i style="font-size: 30px;" class='bx bx-chevrons-right'></i>
             </div>
         </div>
@@ -329,231 +344,239 @@
         <ul class="avail-tabs mt-5 mb-5">
             <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
-                  <button class="nav-link active" id="home-tab" onclick="changeTab('tab1')" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Available Job</button>
+                    <button class="nav-link active" id="home-tab" onclick="changeTab('tab1')" data-bs-toggle="tab"
+                        data-bs-target="#home" type="button" role="tab" aria-controls="home"
+                        aria-selected="true">Available Job</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="profile-tab" onclick="changeTab('tab2')" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Completed Job</button>
+                    <button class="nav-link" id="profile-tab" onclick="changeTab('tab2')" data-bs-toggle="tab"
+                        data-bs-target="#profile" type="button" role="tab" aria-controls="profile"
+                        aria-selected="false">Completed Job</button>
                 </li>
                 <!-- <li class="nav-item" role="presentation">
                   <button class="nav-link" id="contact-tab" onclick="changeTab('tab3')" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Close</button>
                 </li> -->
-              </ul>
+            </ul>
             <hr>
             <div class="content">
                 <div id="tab1" class="tab-content tab-contentss">
-                    
+
                     <table class="table">
                         <thead>
-                          <tr>
-                            <th scope="col">Topic</th>
-                            <th scope="col">Price</th>
-                            <th scope="col">Description</th>
-                            <th scope="col">Capacity</th>
-                          </tr>
+                            <tr>
+                                <th scope="col">Topic</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Description</th>
+                                <th scope="col">Capacity</th>
+                            </tr>
                         </thead>
                         <tbody>
-                          <tr>
-                            <th scope="row">Twitter Job</th>
-                            <td>₦25</td>
-                            <td>Follow, Like and Comment</td>
-                            <td>20 completed out of 32 capacity</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">Twitter Job</th>
-                            <td>₦25</td>
-                            <td>Follow, Like and Comment</td>
-                            <td>20 completed out of 32 capacity</td>
-                          </tr> 
-                          <tr>
-                            <th scope="row">Twitter Job</th>
-                            <td>₦25</td>
-                            <td>Follow, Like and Comment</td>
-                            <td>20 completed out of 32 capacity</td>
-                          </tr> 
-                          <tr>
-                            <th scope="row">Twitter Job</th>
-                            <td>₦25</td>
-                            <td>Follow, Like and Comment</td>
-                            <td>20 completed out of 32 capacity</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">Twitter Job</th>
-                            <td>₦25</td>
-                            <td>Follow, Like and Comment</td>
-                            <td>20 completed out of 32 capacity</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">Twitter Job</th>
-                            <td>₦25</td>
-                            <td>Follow, Like and Comment</td>
-                            <td>20 completed out of 32 capacity</td>
-                          </tr> <tr>
-                            <th scope="row">Twitter Job</th>
-                            <td>₦25</td>
-                            <td>Follow, Like and Comment</td>
-                            <td>20 completed out of 32 capacity</td>
-                          </tr> <tr>
-                            <th scope="row">Twitter Job</th>
-                            <td>₦25</td>
-                            <td>Follow, Like and Comment</td>
-                            <td>20 completed out of 32 capacity</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">Facebook Job</th>
-                            <td>₦20</td>
-                            <td>Follow, Like and Comment</td>
-                            <td>20 completed out of 32 capacity</td>
-                          </tr>
+                            <tr>
+                                <th scope="row">Twitter Job</th>
+                                <td>₦25</td>
+                                <td>Follow, Like and Comment</td>
+                                <td>20 completed out of 32 capacity</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Twitter Job</th>
+                                <td>₦25</td>
+                                <td>Follow, Like and Comment</td>
+                                <td>20 completed out of 32 capacity</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Twitter Job</th>
+                                <td>₦25</td>
+                                <td>Follow, Like and Comment</td>
+                                <td>20 completed out of 32 capacity</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Twitter Job</th>
+                                <td>₦25</td>
+                                <td>Follow, Like and Comment</td>
+                                <td>20 completed out of 32 capacity</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Twitter Job</th>
+                                <td>₦25</td>
+                                <td>Follow, Like and Comment</td>
+                                <td>20 completed out of 32 capacity</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Twitter Job</th>
+                                <td>₦25</td>
+                                <td>Follow, Like and Comment</td>
+                                <td>20 completed out of 32 capacity</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Twitter Job</th>
+                                <td>₦25</td>
+                                <td>Follow, Like and Comment</td>
+                                <td>20 completed out of 32 capacity</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Twitter Job</th>
+                                <td>₦25</td>
+                                <td>Follow, Like and Comment</td>
+                                <td>20 completed out of 32 capacity</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Facebook Job</th>
+                                <td>₦20</td>
+                                <td>Follow, Like and Comment</td>
+                                <td>20 completed out of 32 capacity</td>
+                            </tr>
                         </tbody>
-                      </table>
+                    </table>
                 </div>
                 <div id="tab2" class="tab-content">
                     <table class="table">
                         <thead>
-                          <tr>
-                            <th scope="col">Topic</th>
-                            <th scope="col">Price</th>
-                            <th scope="col">Description</th>
-                            <th scope="col">Completed</th>
-                          </tr>
+                            <tr>
+                                <th scope="col">Topic</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Description</th>
+                                <th scope="col">Completed</th>
+                            </tr>
                         </thead>
                         <tbody>
-                          <tr>
-                            <th scope="row">Twitter Job</th>
-                            <td>₦25</td>
-                            <td>Follow, Like and Comment</td>
-                            <td>
-                                <i style="color: #3DBA4E; font-size: 30px;" class='bx bx-check'></i>
-                            </td>
-                          </tr>
-                          <tr>
-                            <th scope="row">Twitter Job</th>
-                            <td>₦25</td>
-                            <td>Follow, Like and Comment</td>
-                            <td>
-                                <i style="color: #3DBA4E; font-size: 30px;" class='bx bx-check'></i>
-                            </td>
-                          </tr> 
-                          <tr>
-                            <th scope="row">Twitter Job</th>
-                            <td>₦25</td>
-                            <td>Follow, Like and Comment</td>
-                            <td>
-                                <i style="color: #3DBA4E; font-size: 30px;" class='bx bx-check'></i>
-                            </td>
-                          </tr> 
-                          <tr>
-                            <th scope="row">Twitter Job</th>
-                            <td>₦25</td>
-                            <td>Follow, Like and Comment</td>
-                            <td>
-                                <i style="color: #3DBA4E; font-size: 30px;" class='bx bx-check'></i>
-                            </td>
-                          </tr>
-                          <tr>
-                            <th scope="row">Twitter Job</th>
-                            <td>₦25</td>
-                            <td>Follow, Like and Comment</td>
-                            <td>
-                                <i style="color: #3DBA4E; font-size: 30px;" class='bx bx-check'></i>
-                            </td>
-                          </tr> 
-                          <tr>
-                            <th scope="row">Twitter Job</th>
-                            <td>₦25</td>
-                            <td>Follow, Like and Comment</td>
-                            <td>
-                                <i style="color: #3DBA4E; font-size: 30px;" class='bx bx-check'></i>
-                            </td>
-                          </tr>
-                          <tr>
-                            <th scope="row">Twitter Job</th>
-                            <td>₦25</td>
-                            <td>Follow, Like and Comment</td>
-                            <td>
-                                <i style="color: #3DBA4E; font-size: 30px;" class='bx bx-check'></i>
-                            </td>
-                          </tr> 
-                          <tr>
-                            <th scope="row">Twitter Job</th>
-                            <td>₦25</td>
-                            <td>Follow, Like and Comment</td>
-                            <td>
-                                <i style="color: #3DBA4E; font-size: 30px;" class='bx bx-check'></i>
-                            </td>
-                          </tr>
-                          <tr>
-                            <th scope="row">Twitter Job</th>
-                            <td>₦25</td>
-                            <td>Follow, Like and Comment</td>
-                            <td>
-                                <i style="color: #3DBA4E; font-size: 30px;" class='bx bx-check'></i>
-                            </td>
-                          </tr> 
-                          <tr>
-                            <th scope="row">Twitter Job</th>
-                            <td>₦25</td>
-                            <td>Follow, Like and Comment</td>
-                            <td>
-                                <i style="color: #3DBA4E; font-size: 30px;" class='bx bx-check'></i>
-                            </td>
-                          </tr>
-                          <tr>
-                            <th scope="row">Twitter Job</th>
-                            <td>₦25</td>
-                            <td>Follow, Like and Comment</td>
-                            <td>
-                                <i style="color: #3DBA4E; font-size: 30px;" class='bx bx-check'></i>
-                            </td>
-                          </tr> 
-                          <tr>
-                            <th scope="row">Twitter Job</th>
-                            <td>₦25</td>
-                            <td>Follow, Like and Comment</td>
-                            <td>
-                                <i style="color: #3DBA4E; font-size: 30px;" class='bx bx-check'></i>
-                            </td>
-                          </tr>
-                          <tr>
-                            <th scope="row">Twitter Job</th>
-                            <td>₦25</td>
-                            <td>Follow, Like and Comment</td>
-                            <td>
-                                <i style="color: #3DBA4E; font-size: 30px;" class='bx bx-check'></i>
-                            </td>
-                          </tr>
-                          <tr>
-                            <th scope="row">Twitter Job</th>
-                            <td>₦25</td>
-                            <td>Follow, Like and Comment</td>
-                            <td>
-                                <i style="color: #3DBA4E; font-size: 30px;" class='bx bx-check'></i>
-                            </td>
-                          </tr> <tr>
-                            <th scope="row">Twitter Job</th>
-                            <td>₦25</td>
-                            <td>Follow, Like and Comment</td>
-                            <td>
-                                <i style="color: #3DBA4E; font-size: 30px;" class='bx bx-check'></i>
-                            </td>
-                          </tr> <tr>
-                            <th scope="row">Twitter Job</th>
-                            <td>₦25</td>
-                            <td>Follow, Like and Comment</td>
-                            <td>
-                                <i style="color: #3DBA4E; font-size: 30px;" class='bx bx-check'></i>
-                            </td>
-                          </tr>
-                          <tr>
-                            <th scope="row">Facebook Job</th>
-                            <td>₦20</td>
-                            <td>Follow, Like and Comment</td>
-                            <td>
-                                <i style="color: #3DBA4E; font-size: 30px;" class='bx bx-check'></i>
-                            </td>
-                          </tr>
+                            <tr>
+                                <th scope="row">Twitter Job</th>
+                                <td>₦25</td>
+                                <td>Follow, Like and Comment</td>
+                                <td>
+                                    <i style="color: #3DBA4E; font-size: 30px;" class='bx bx-check'></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Twitter Job</th>
+                                <td>₦25</td>
+                                <td>Follow, Like and Comment</td>
+                                <td>
+                                    <i style="color: #3DBA4E; font-size: 30px;" class='bx bx-check'></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Twitter Job</th>
+                                <td>₦25</td>
+                                <td>Follow, Like and Comment</td>
+                                <td>
+                                    <i style="color: #3DBA4E; font-size: 30px;" class='bx bx-check'></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Twitter Job</th>
+                                <td>₦25</td>
+                                <td>Follow, Like and Comment</td>
+                                <td>
+                                    <i style="color: #3DBA4E; font-size: 30px;" class='bx bx-check'></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Twitter Job</th>
+                                <td>₦25</td>
+                                <td>Follow, Like and Comment</td>
+                                <td>
+                                    <i style="color: #3DBA4E; font-size: 30px;" class='bx bx-check'></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Twitter Job</th>
+                                <td>₦25</td>
+                                <td>Follow, Like and Comment</td>
+                                <td>
+                                    <i style="color: #3DBA4E; font-size: 30px;" class='bx bx-check'></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Twitter Job</th>
+                                <td>₦25</td>
+                                <td>Follow, Like and Comment</td>
+                                <td>
+                                    <i style="color: #3DBA4E; font-size: 30px;" class='bx bx-check'></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Twitter Job</th>
+                                <td>₦25</td>
+                                <td>Follow, Like and Comment</td>
+                                <td>
+                                    <i style="color: #3DBA4E; font-size: 30px;" class='bx bx-check'></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Twitter Job</th>
+                                <td>₦25</td>
+                                <td>Follow, Like and Comment</td>
+                                <td>
+                                    <i style="color: #3DBA4E; font-size: 30px;" class='bx bx-check'></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Twitter Job</th>
+                                <td>₦25</td>
+                                <td>Follow, Like and Comment</td>
+                                <td>
+                                    <i style="color: #3DBA4E; font-size: 30px;" class='bx bx-check'></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Twitter Job</th>
+                                <td>₦25</td>
+                                <td>Follow, Like and Comment</td>
+                                <td>
+                                    <i style="color: #3DBA4E; font-size: 30px;" class='bx bx-check'></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Twitter Job</th>
+                                <td>₦25</td>
+                                <td>Follow, Like and Comment</td>
+                                <td>
+                                    <i style="color: #3DBA4E; font-size: 30px;" class='bx bx-check'></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Twitter Job</th>
+                                <td>₦25</td>
+                                <td>Follow, Like and Comment</td>
+                                <td>
+                                    <i style="color: #3DBA4E; font-size: 30px;" class='bx bx-check'></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Twitter Job</th>
+                                <td>₦25</td>
+                                <td>Follow, Like and Comment</td>
+                                <td>
+                                    <i style="color: #3DBA4E; font-size: 30px;" class='bx bx-check'></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Twitter Job</th>
+                                <td>₦25</td>
+                                <td>Follow, Like and Comment</td>
+                                <td>
+                                    <i style="color: #3DBA4E; font-size: 30px;" class='bx bx-check'></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Twitter Job</th>
+                                <td>₦25</td>
+                                <td>Follow, Like and Comment</td>
+                                <td>
+                                    <i style="color: #3DBA4E; font-size: 30px;" class='bx bx-check'></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Facebook Job</th>
+                                <td>₦20</td>
+                                <td>Follow, Like and Comment</td>
+                                <td>
+                                    <i style="color: #3DBA4E; font-size: 30px;" class='bx bx-check'></i>
+                                </td>
+                            </tr>
                         </tbody>
-                      </table>
+                    </table>
                 </div>
                 <div id="tab3" class="tab-content">
                     <!-- Content for Tab 3 -->
@@ -580,6 +603,16 @@
         sidebarBtn.addEventListener("click", () => {
             sidebar.classList.toggle("close");
         });
+    </script>
+    <script>
+        function showMessage() {
+            var message = document.getElementById("message");
+            message.style.display = "block";
+
+            setTimeout(function () {
+                message.style.display = "none";
+            }, 4000);
+        }
     </script>
     <script src="/tabs.js"></script>
     <script src="/clipboardAPI.js"></script>
