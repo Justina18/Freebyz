@@ -503,6 +503,15 @@
   flex-direction: column;
 }
 
+.jobs-avail-tabs {
+  width: 95%;
+  background-color: #fff;
+  padding: 8px;
+  border-radius: 8px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 .content {
   margin-left: 20px;
   overflow: scroll;
@@ -567,8 +576,36 @@ tbody tr:hover {
 }
 
 .Job-description{
+  width: 95%;
+}
+.info-content{
+  background-color: #fff;
+  height: 72vh;
   width: 90%;
-  
+}
+.verify-head{
+  width: 90%;
+}
+.verify-content{
+  width: 90%;
+
+}
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 8rem;
+  border-radius: 40%;
+  height: 8rem;
+  transition: opacity .25s ease-out,transform .25s ease-out;
+}
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 0;
+  margin-bottom: 0;
+  font-size: .875rem;
+  list-style: none;
 }
 .Job-description img{
   width: 12%;
