@@ -558,10 +558,22 @@ tbody tr:hover {
   background-color: #fff;
 }
 
-.Specific-body{
+.Specific-body {
   width: 90%;
 }
-.Specific-body-head{
+
+.tab-pane a {
+  text-decoration: none;
+}
+
+.Job-description{
+  width: 90%;
+  
+}
+.Job-description img{
+  width: 12%;
+}
+.Specific-body-head {
   display: flex;
   justify-content: flex-start;
   align-items: center;
