@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title> Freebyz Dashboard/Campaigns</title>
@@ -17,6 +18,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="sidebar close">
         <div class="logo-details">
@@ -171,13 +173,50 @@
                 </ul>
             </div>
         </div>
-    <div>
-        <div class="content content-boxed text-center py-5">
-            <h1 class="h2 text-black mb-2">
-        Create Campaign
-            </h1>
+
+        <div class="bg-image" style="background-image: url(/image/moneybg.png); width: 100%; z-index: 100;">
+            <div style="background-color: #11101d;">
+                <div class="content content-boxed text-center py-5">
+                    <h1 class="h2 text-white mb-2">Create Campaigns</h1>
+                </div>
+            </div>
         </div>
-    </div>
+        <div class="content content-boxed" style="width: 90%;">
+            <h5 class="content-heading mt-5 mb-4" style="width: 100%; display: flex; gap: 5px; align-items: center;">
+                <i class='bx bx-plus-circle text-success'></i> 
+                Create Jobs for workers
+            </h5>
+
+            <hr/>
+            
+            <form action="https://www.freebyz.com/post/campaign" method="post">
+                <input type="hidden" name="_token" value="vTzidxm7seKWnYjcqaZpFKRXeIC0hHHtQhPzNw48"/>
+                <div class="block block-rounded">
+                    <div class="block-content block-content-full">
+                        <h2 class="content-heading"> Campaign Information</h2>
+                        <div class="row items-push">
+                            <div class="col-lg-4">
+                                <div class="contained">
+                                    <p class="text" style="text-align: center;">Kindly fill all parts of this form as they are all compulsory</p>
+                                    <img class="image" src="/image/img2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 offset-lg-1">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <hr>
+                                <h4></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </form>
+
+        </div>
+    </section>
     <script>
         let arrow = document.querySelectorAll(".arrow");
         for (var i = 0; i < arrow.length; i++) {
@@ -198,4 +237,5 @@
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
 </body>
+
 </html>
