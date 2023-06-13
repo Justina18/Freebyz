@@ -3,22 +3,18 @@
 
 <head>
     <meta charset="UTF-8">
-    <title> Freebyz Dashboard/Wallet</title>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title> Freebyz Dashboard/MyJobs</title>
     <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="Users/justina/Downloads/fontawesome-free-6.4.0-web/css/all.css">
-    <link rel="stylesheet" href="Users/justina/Downloads/fontawesome-free-6.4.0-web/css/solid.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         .icon {
-            font-size: 38px;
+            font-size: 78px;
         }
 
         .img-icon {
-            width: 58px;
+            width: 78px;
         }
     </style>
 </head>
@@ -48,7 +44,7 @@
                     <i class='bx bxs-chevron-down arrow'></i>
                 </div>
                 <ul class="sub-menu">
-                    <li><a class="link_name" href="../Jobs/jobs.html">Jobs</a></li>
+                    <li><a class="Jobs" href="./jobs.html">Jobs</a></li>
                     <li><a href="#">Available Jobs</a></li>
                     <li><a href="#">My Jobs</a></li>
                     <li><a href="#">Completed Jobs</a></li>
@@ -63,7 +59,7 @@
                     <i class='bx bxs-chevron-down arrow'></i>
                 </div>
                 <ul class="sub-menu">
-                    <li><a class="link_name" href='#'>Campaigns</li>
+                    <li><a class="link_name" href="#">Campaigns</li>
                     <li><a href="../campaign/creatCampaign.html">Create Campaign</a></li>
                     <li><a href="#">View Campaigns</a></li>
                     <li><a href="#">Approved Campaigns</a></li>
@@ -79,8 +75,8 @@
                     <i class='bx bxs-chevron-down arrow'></i>
                 </div>
                 <ul class="sub-menu">
-                    <li><a class="link_name" href="#">Wallet</li>
-                    <li><a href="./fundWallet.html">Fund Wallet</a></li>
+                    <li><a class="link_name" href="./Wallet/wallet.html">Wallet</li>
+                    <li><a href="./Wallet/fundWallet.html">Fund Wallet</a></li>
                     <li><a href="#">Withdraw</a></li>
                     <li><a href="#">Withdrawal Requests</a></li>
                 </ul>
@@ -163,7 +159,6 @@
         <div class="home-content">
             <div class="header">
                 <i class='bx bx-menu'></i>
-                <h4>Hey there User!</h4>
             </div>
 
             <div class="dropdown pro-butt-wrap">
@@ -178,67 +173,67 @@
                 </ul>
             </div>
         </div>
-
-        <div class="wallet-funds mt-5">
-            <div>
-                Total Balance <i class="bx bx-show"></i>
-                <h5>
-                    <span>&#8358;</span>402.00
-                </h5>
-            </div>
-
-            <div>
-                <button> <a href="./fundWallet.html">Fund</a> </button>
-            </div>
-        </div>
-
-        <div class="row wallet-fund-icon mt-5">
-            <h4>Transfering Money</h4>
-            <div class="wallet-icons mt-4">
-                <div class="wallet-icons-hold">
-                    <i style="color: #6564DB;" class="fas fa-university icon"></i>
-                    <p>To a Bank</p>
-                </div>
-                <div class="wallet-icons-hold">
-                    <i style="color: #C4A69D;" class='bx bx-money-withdraw icon'></i>
-                    <p>Withdraw</p>
-
-                </div>
-                <div class="wallet-icons-hold">
-                    <i style="color: #39A2AE;" class="fas fa-hand-holding-usd icon"></i>
-                    <p>Share Points or funds.</p>
-
-                </div>
-                <div class="wallet-icons-hold">
-                    <i style="color: #36335C;" class='bx bx-money-withdraw icon'></i>
-                    <p>Make Online Payments</p>
-                </div>
+        <div class="content content-full verify-head mt-4">
+            <div class="d-flex flex-column flex-sm-row justify-content-sm-between align-items-sm-center">
+                <h2 class="flex-grow-1 fs-5 my-2 my-sm-3">Jobs</h2>
+                <nav class="flex-shrink-0 my-2 my-sm-0 ms-sm-3" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            Jobs
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">My Job</li>
+                    </ol>
+                </nav>
             </div>
         </div>
+        <div class="content" style="width: 90%; background-color: white;">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col" style="border-width: 3px;">Name</th>
+                        <th scope="col" style="border-width: 3px;">₦Amount</th>
+                        <th scope="col" style="border-width: 3px;">Status</th>
+                        <th scope="col" style="border-width: 3px;">Action</th>
+                    </tr>
+                </thead>
 
-        <div class=" wallet-fund-icon mt-5">
-            <h4>Other things you can do</h4>
-            <div class=" wallet-funds ">
-                <div class="wallet-icons-hold">
-                    <i style="color: #39A2AE;" class="fas fa-comment-dollar icon"></i>
-                    <p>Refer and Earn</p>
-                </div>
-                <div class="wallet-icons-hold">
-                    <i style="color: #36335C;" class="fas fa-wifi icon"></i>
-                    <p> Buy Data</p>
-                </div>
-                <div class="wallet-icons-hold">
-                    <i style="color: #6564DB;" class="fal fa-shopping-cart icon"></i>
-                    <p> Pay for a product from the market place</p>
-                </div>
-                <div class="wallet-icons-hold">
-                    <i style="color: #AB8073;" class="fas fa-phone-alt icon"></i>
-                    <p> Buy Airtime</p>
-                </div>
+                <!-- <tbody>
+                    <tr>
+                        <th scope="row">Twitter Job</th>
+                        <td>₦25</td>
+                        <td>Follow, Like and Comment</td>
+                        <td>20 completed out of 32 capacity</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Twitter Job</th>
+                        <td>₦25</td>
+                        <td>Follow, Like and Comment</td>
+                        <td>20 completed out of 32 capacity</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Twitter Job</th>
+                        <td>₦25</td>
+                        <td>Follow, Like and Comment</td>
+                        <td>20 completed out of 32 capacity</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Facebook Job</th>
+                        <td>₦20</td>
+                        <td>Follow, Like and Comment</td>
+                        <td>20 completed out of 32 capacity</td>
+                    </tr>
+                </tbody> -->
+            </table>
+            <div class="d-flex justify-content-center align-items-center flex-column">
+                <img style="width: 35%;" src="../image/mag.png" alt="">
+                <h3 class="">Nothing to see here!</h3>
+                <h6>Click <a href="./jobs.html" style="text-decoration: none;">Here</a> to see available jobs </h6>
             </div>
+        </div>
+        <div class="footer shadow p-3 mt-5 bg-body-tertiary rounded" >
+            <h5>Crafted with Love and Happiness by Ninamma.</h5>
         </div>
     </section>
-
     <script>
         let arrow = document.querySelectorAll(".arrow");
         for (var i = 0; i < arrow.length; i++) {
@@ -255,6 +250,7 @@
         });
     </script>
     <script src="/clipboardAPI.js"></script>
+    <script src="../tabs.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
