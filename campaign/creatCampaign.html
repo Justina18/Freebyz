@@ -61,8 +61,8 @@
                 <ul class="sub-menu">
                     <li><a class="link_name" href="#">Campaigns</li>
                     <li><a href="../campaign/creatCampaign.html">Create Campaign</a></li>
-                    <li><a href="#">View Campaigns</a></li>
-                    <li><a href="#">Approved Campaigns</a></li>
+                    <li><a href="../campaign/viewCampaigns.html">View Campaigns</a></li>
+                    <li><a href="../campaign/approvedCampaigns.html">Approved Campaigns</a></li>
                     <li><a href="#">Denied Campaigns</a></li>
                 </ul>
             </li>
@@ -230,8 +230,9 @@
                                 <div class="mb-4">
                                     <div class="mb-4">
                                         <label class="form-label" for="post-category">Category</label>
-                                        <select name="campaign_subcategory" id="post-category" class="js-select2 form-select"
-                                            style="width: 100%;" data-placeholder="Choose category.." required>
+                                        <select name="campaign_subcategory" id="post-category"
+                                            class="js-select2 form-select" style="width: 100%;"
+                                            data-placeholder="Choose category.." required>
                                             <option value="">Select Category</option>
                                         </select>
                                     </div>
@@ -239,22 +240,93 @@
                                 <div class="mb-4 row">
                                     <div class="col-6">
                                         <label for="post-salary-min" class="form-label">Number of Workers</label>
-                                        <input type="number" class="form-control" name="number_of_staff" id="number-of-staff" min="15" value="15"/>
+                                        <input type="number" class="form-control" name="number_of_staff"
+                                            id="number-of-staff" min="15" value="15" />
                                     </div>
                                     <div class="col-6">
                                         <label for="post-salary-min" class="form-label">Cost per Campaign(₦)</label>
-                                        <input type="text" name="campaign_amount" class="form-control" id="amount_per_campaign" readonly value/>
+                                        <input type="text" name="campaign_amount" class="form-control"
+                                            id="amount_per_campaign" readonly value />
                                     </div>
                                 </div>
-                                <hr>
+
                                 <h4>Estimated Cost: ₦
                                     <span id="demo"></span>
                                 </h4>
                             </div>
                         </div>
-                        <div></div>
+                        <hr>
+                        <div class="block-content">
+                            <h2 class="content-heading ">Campaign Description</h2>
+                            <div class="row items-push">
+                                <div class="col-lg-4">
+                                    <p class="text-muted">
+                                        Give detailed decription of the campaign
+                                    </p>
+                                </div>
+                                <div class="col-lg-6 offset-lg-1">
+                                    <div class="mb-4">
+                                        <label for="post-title" class="form-label">Title</label>
+                                        <input type="text" name="post_title" class="form-control" id="post-title"
+                                            required value />
+                                        <small>
+                                            <i>Please a little more description e.g Facebook Like or Youtube comment
+                                                e.t.c.</i>
+                                        </small>
+                                    </div>
+                                    <div class="mb-4">
+                                        <label for="post-title" class="form-label">External Link</label>
+                                        <input type="url" name="post_link" class="form-control" id="post-title" required
+                                            value />
+                                        <small>
+                                            <i>Please provide an external link for your campaign e.g
+                                                https://myhotjobz.com or https://youtube.com/abc </i>
+                                        </small>
+                                    </div>
+                                    <div class="mb-4">
+                                        <label for="post-files">Campaign Description <small>(Ensure that the description
+                                                of the task to be done is simple and clear to avoid
+                                                misunderstandings)</small> </label>
+                                        <textarea name="description" id="js-ckeditor5-classic" style="display: none;"
+                                            required class="form-control"></textarea>
+                                        <!-- <div class="ck ck-reset ck-editor ck-rounded-corners" role="application" dir="ltr" lang="en" aria-labelledby="ck-editor__label_ee3163f07d4db5571bbceed2b0e3395dd">
+                                            <label class="ck ck-label ck-voice-label" id="ck-editor__label_ee3163f07d4db5571bbceed2b0e3395dd" for=""></label>
+                                            <div class="ck ck-editor__top ck-reset_all" role="presentation">
+                                                <div class="ck ck-sticky-panel">
+
+                                                </div>
+                                            </div>
+                                            <div></div>
+                                        </div> -->
+                                        <div class="form-floating mb-2">
+                                            <textarea class="form-control" style="height: 50%;"
+                                                placeholder="Leave a comment here" id="floatingTextarea2"
+                                                style="height: 100px"></textarea>
+                                            <label for="floatingTextarea2" style="color: #a4a4a0;">Description</label>
+                                        </div>
+                                    </div>
+                                    <div class="mb-4">
+                                        <label for="post-title" class="form-label">Expected Campaign Proof <small>(You
+                                                can request for social media handle, email or other means of identifying
+                                                the worker to verify that the job is done)</small> </label>
+                                        <textarea name="proof" id="mytextareas" class="form-control"
+                                            required></textarea>
+                                    </div>
+                                    <div class="mb-4">
+                                        <input type="checkbox" name="validate" required />
+                                        <span>
+                                            <small>
+                                                I agree that this campaign will be automatically approved after five (5)
+                                                days if i fail to approve it.
+                                            </small>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div></div>
                     </div>
+                </div>
             </form>
 
         </div>
