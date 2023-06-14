@@ -183,36 +183,78 @@
         </div>
         <div class="content content-boxed" style="width: 90%;">
             <h5 class="content-heading mt-5 mb-4" style="width: 100%; display: flex; gap: 5px; align-items: center;">
-                <i class='bx bx-plus-circle text-success'></i> 
+                <i class='bx bx-plus-circle text-success'></i>
                 Create Jobs for workers
             </h5>
 
-            <hr/>
-            
+            <hr />
+
             <form action="https://www.freebyz.com/post/campaign" method="post">
-                <input type="hidden" name="_token" value="vTzidxm7seKWnYjcqaZpFKRXeIC0hHHtQhPzNw48"/>
+                <input type="hidden" name="_token" value="vTzidxm7seKWnYjcqaZpFKRXeIC0hHHtQhPzNw48" />
                 <div class="block block-rounded">
                     <div class="block-content block-content-full">
                         <h2 class="content-heading"> Campaign Information</h2>
                         <div class="row items-push">
                             <div class="col-lg-4">
                                 <div class="contained">
-                                    <p class="text" style="text-align: center;">Kindly fill all parts of this form as they are all compulsory</p>
+                                    <p class="text" style="text-align: center;">Kindly fill all parts of this form as
+                                        they are all compulsory</p>
                                     <img class="image" src="/image/img2.png" alt="">
                                 </div>
                             </div>
                             <div class="col-lg-6 offset-lg-1">
-                                <div></div>
-                                <div></div>
-                                <div></div>
+                                <div class="mb-4">
+                                    <label class="form-label" for="post-type">Type</label>
+                                    <select name="campaign_type" id="post-type" class="js-select2 form-select"
+                                        style="width: 100%;" data-placeholder="Choose type.." required>
+                                        <option value="">Select Type of Job</option>
+                                        <option value="1">FACEBOOK JOB</option>
+                                        <option value="2">CANVA GRAPHIC DESIGN</option>
+                                        <option value="3">YOUTUBE JOB</option>
+                                        <option value="4">TWITTER JOB</option>
+                                        <option value="5">WHATSAPP JOB</option>
+                                        <option value="6">GOOGLE BUISINESS REVIEW JOB</option>
+                                        <option value="7">TIKTOK JOB</option>
+                                        <option value="8">VIDEO EDITING JOB</option>
+                                        <option value="9">INSTAGRAM JOB</option>
+                                        <option value="10">MOBILE APPS JOB</option>
+                                        <option value="11">WEBSITE TRAFFIC JOB</option>
+                                        <option value="12">APP SIGN UP</option>
+                                        <option value="13">ONLINE SURVEY JOB</option>
+                                        <option value="14">APP SIGN UP REFERRAL BONUS</option>
+                                        <option value="15">MUSIC APP JOB</option>
+                                        <option value="16">POST CONTENT ON SOCIAL MEDIA</option>
+                                        <option value="17">TELEGRAM JOB</option>
+                                    </select>
+                                </div>
+                                <div class="mb-4">
+                                    <div class="mb-4">
+                                        <label class="form-label" for="post-category">Category</label>
+                                        <select name="campaign_subcategory" id="post-category" class="js-select2 form-select"
+                                            style="width: 100%;" data-placeholder="Choose category.." required>
+                                            <option value="">Select Category</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="mb-4 row">
+                                    <div class="col-6">
+                                        <label for="post-salary-min" class="form-label">Number of Workers</label>
+                                        <input type="number" class="form-control" name="number_of_staff" id="number-of-staff" min="15" value="15"/>
+                                    </div>
+                                    <div class="col-6">
+                                        <label for="post-salary-min" class="form-label">Cost per Campaign(₦)</label>
+                                        <input type="text" name="campaign_amount" class="form-control" id="amount_per_campaign" readonly value/>
+                                    </div>
+                                </div>
                                 <hr>
-                                <h4></h4>
+                                <h4>Estimated Cost: ₦
+                                    <span id="demo"></span>
+                                </h4>
                             </div>
                         </div>
+                        <div></div>
+                        <div></div>
                     </div>
-                    <div></div>
-                    <div></div>
-                </div>
             </form>
 
         </div>
