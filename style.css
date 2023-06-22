@@ -615,6 +615,10 @@ tbody tr:hover {
   justify-content: flex-start;
   align-items: center;
 }
+.contact:hover{
+  animation: pulse;
+  animation-duration: 2s;
+}
 @media (max-width: 768px) {
   .contained-wrap {
     display: flex;
