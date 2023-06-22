@@ -173,34 +173,53 @@
             </div>
         </div>
 
-        <div class="content" style="width: 90%; background-color: white; padding: 10px;">
-            <div class="block block-rounded">
-                <div class="block-content">
-                    <p>
-
-                        Follow the steps below to approve/disapprove job(s) done by workers on Freebyz.
-                        <br />
-                        1. Login to dashboard
-                        <br />
-                        2. Select menu and select the 'Post campaign' sub menu. A drop down will be displayed.
-                        <br />
-                        3. Select 'View campaign' to select all the jobs you posted then click on 'View Activities' on
-                        the job you want to approve/deny
-                        <br />
-                        4. Once the jobs have been done by online workers, you'll see the list of people who have done
-                        the job
-                        <br />
-                        5. Click on 'View' button on the Right hand side of each submission and then see the submission
-                        (s) made by the workers
-                        <br />
-                        6. If you're satisfied, enter in your reasons and select the 'Approve' or 'Deny' button.
-                        <br />
-                        7. Don't forget that the system will automatically approve the jobs if you fail to approve after
-                        5days.
-                    </p>
+        <form action="" method="post" class="content"
+            style="width: 80%; height: 80vh; background-color: white; padding: 10px;">
+            <div class="mb-4 mt-4 d-flex justify-content-around align-items-start  flex-column">
+                <div>
+                    <p>Are enjoying our product?</p>
+                </div>
+                <div class=" justify-content-start d-flex flex-column flex-sm-row" style="gap: 40px;">
+                    <div class="form-check">
+                        <input class="form-check-input"  value="option1" onclick="showTextArea()" type="radio" name="flexRadioDefault" id="flexRadioDefault3"
+                            checked>
+                        <label class="form-check-label" for="flexRadioDefault3">
+                            No
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Partially
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                            checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Yes
+                        </label>
+                    </div>
                 </div>
             </div>
-        </div>
+            <div class="mb-4" id="myTextArea" style="display: none;">
+                <div class="form-floating">
+                    <small style="color: #9f9e9e;">What is the reason you are not enjoying our website?(Try to keep your answer short)</small>
+                    <textarea class="form-control" style="height: 12vh;" required placeholder="Leave a comment here"
+                        id="textarea1"></textarea>
+                    <div id="wordCount1">Words remaining: 15</div>
+                </div>
+            </div>
+            <div class="mb-4">
+                <div class="form-floating">
+                    <small style="color: #9f9e9e;">Do you have suggestions on how we can make
+                        our website better for you?(Try to keep your answer short)</small>
+                    <textarea class="form-control" style="height: 20vh;" required placeholder="Leave a comment here"
+                        id="textarea"></textarea>
+                    <div id="wordCount">Words remaining: 30</div>
+                </div>
+            </div>
+        </form>
         <div class="footer shadow p-3 mt-5 bg-body-tertiary rounded">
             <h5>Crafted with Love and Happiness by Ninamma.</h5>
         </div>
@@ -219,6 +238,57 @@
         sidebarBtn.addEventListener("click", () => {
             sidebar.classList.toggle("close");
         });
+    </script>
+    <script>
+        const textarea1 = document.getElementById("textarea1");
+        const wordCount1 = document.getElementById("wordCount1");
+
+        textarea1.addEventListener("input", function () {
+            const inputText = textarea1.value;
+            const words = inputText.trim().split(/\s+/);
+            const remainingWords = 15 - words.length;
+
+            wordCount1.textContent = `Words remaining: ${remainingWords}`;
+
+            if (remainingWords < 0) {
+                // Remove extra words
+                const limitedText = words.slice(0, 15).join(" ");
+                textarea1.value = limitedText;
+                wordCount1.textContent = "Maximum word count reached";
+            }
+        });
+    </script>
+    <script>
+        const textarea = document.getElementById("textarea");
+        const wordCount = document.getElementById("wordCount");
+
+        textarea.addEventListener("input", function () {
+            const inputText = textarea.value;
+            const words = inputText.trim().split(/\s+/);
+            const remainingWords = 30 - words.length;
+
+            wordCount.textContent = `Words remaining: ${remainingWords}`;
+
+            if (remainingWords < 0) {
+                // Remove extra words
+                const limitedText = words.slice(0, 30).join(" ");
+                textarea.value = limitedText;
+                wordCount.textContent = "Maximum word count reached";
+            }
+        });
+    </script>
+    <script>
+        function showTextArea() {
+            const radioOption1 = document.querySelector('input[value="option1"]');
+            const textArea = document.getElementById('myTextArea');
+
+            if (radioOption1.checked) {
+                textArea.style.display = 'block';
+            } else {
+                textArea.style.display = 'none';
+            }
+        }
+
     </script>
     <script src="/clipboardAPI.js"></script>
     <script src="../tabs.js"></script>
