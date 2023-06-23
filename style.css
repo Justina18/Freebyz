@@ -246,26 +246,6 @@
   font-weight: 600;
 }
 
-@media (max-width: 400px) {
-  .sidebar.close .nav-links li .sub-menu {
-    display: none;
-  }
-  .sidebar {
-    width: 78px;
-  }
-  .sidebar.close {
-    width: 0;
-  }
-  .home-section {
-    left: 78px;
-    width: calc(100% - 78px);
-    z-index: 100;
-  }
-  .sidebar.close ~ .home-section {
-    width: 100%;
-    left: 0;
-  }
-}
 
 /* Plain */
 .header {
@@ -335,6 +315,7 @@
 }
 .contained-wrap {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   align-items: center;
 }
@@ -622,10 +603,12 @@ tbody tr:hover {
 }
 @media (max-width: 768px) {
   .contained-wrap {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
   }
   .wallet-fund h5 {
     font-size: small;
@@ -634,4 +617,25 @@ tbody tr:hover {
     width: 65%;
     height: 50%;
   }
+}
+
+@media (max-width: 425px) {
+  .sub-menu {
+    display: none;
+  }
+  .sidebar.close{
+    display: none;
+  }  .sidebar{
+    display: none;
+  } .nav-links li{
+    display: none;
+  }
+  .sidebar.close ~ .home-section {
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.contained-wrap-h{
+  font-size: large;
+}
 }
