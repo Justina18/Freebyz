@@ -12,7 +12,7 @@
   left: 0;
   height: 100%;
   width: 260px;
-  background: #11101d;
+  background: #011124;
   z-index: 100;
   transition: all 0.5s ease;
 }
@@ -234,7 +234,7 @@
 }
 .home-section .home-content .bx-menu,
 .home-section .home-content .text {
-  color: #11101d;
+  color: #011124;
   font-size: 35px;
 }
 .home-section .home-content .bx-menu {
@@ -245,7 +245,6 @@
   font-size: 26px;
   font-weight: 600;
 }
-
 
 /* Plain */
 .header {
@@ -262,7 +261,7 @@
   text-decoration: none;
   vertical-align: middle;
   cursor: pointer;
-  background-color: #11101d;
+  background-color: #011124;
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
@@ -415,7 +414,7 @@
   color: #fff;
   border: none;
   outline: none;
-  background-color: #11101d;
+  background-color: #011124;
   border-radius: 12px;
   width: 120px;
   padding: 5px;
@@ -424,7 +423,7 @@
   color: #fff;
   border: none;
   outline: none;
-  background-color: #11101d;
+  background-color: #011124;
   border-radius: 12px;
   width: 120px;
   padding: 5px;
@@ -476,7 +475,7 @@
 }
 
 .avail-tabs {
-  width: 90%;
+  width: 95%;
   background-color: #fff;
   padding: 10px;
   border-radius: 8px;
@@ -530,14 +529,14 @@ tbody tr:hover {
   font-weight: 700;
   cursor: pointer;
   text-decoration: none;
-  color: #11101d;
+  color: #011124;
 }
 .container a {
   font-size: larger;
   font-weight: 700;
   cursor: pointer;
   text-decoration: none;
-  color: #11101d;
+  color: #011124;
 }
 
 .footer {
@@ -557,20 +556,19 @@ tbody tr:hover {
   text-decoration: none;
 }
 
-.Job-description{
+.Job-description {
   width: 95%;
 }
-.info-content{
+.info-content {
   background-color: #fff;
   height: 72vh;
   width: 90%;
 }
-.verify-head{
+.verify-head {
   width: 90%;
 }
-.verify-content{
+.verify-content {
   width: 90%;
-
 }
 .item {
   display: flex;
@@ -579,17 +577,17 @@ tbody tr:hover {
   width: 8rem;
   border-radius: 40%;
   height: 8rem;
-  transition: opacity .25s ease-out,transform .25s ease-out;
+  transition: opacity 0.25s ease-out, transform 0.25s ease-out;
 }
 .breadcrumb {
   display: flex;
   flex-wrap: wrap;
   padding: 0 0;
   margin-bottom: 0;
-  font-size: .875rem;
+  font-size: 0.875rem;
   list-style: none;
 }
-.Job-description img{
+.Job-description img {
   width: 12%;
 }
 .Specific-body-head {
@@ -597,10 +595,15 @@ tbody tr:hover {
   justify-content: flex-start;
   align-items: center;
 }
-.contact:hover{
+.contact:hover {
   animation: pulse;
   animation-duration: 2s;
 }
+.icon-container {
+  display: none;
+}
+
+
 @media (max-width: 768px) {
   .contained-wrap {
     width: 100%;
@@ -617,25 +620,52 @@ tbody tr:hover {
     width: 65%;
     height: 50%;
   }
+  .custom-dropdown {
+    display: none;
+  }
 }
 
 @media (max-width: 425px) {
   .sub-menu {
     display: none;
   }
-  .sidebar.close{
+  .sidebar.close {
     display: none;
-  }  .sidebar{
+  }
+  .sidebar {
     display: none;
-  } .nav-links li{
+  }
+  .nav-links li {
     display: none;
   }
   .sidebar.close ~ .home-section {
     left: 0;
     height: 100%;
     width: 100%;
-}
-.contained-wrap-h{
-  font-size: large;
-}
+  }
+  .headerOne {
+    display: none;
+  }
+  /*  .sidebar.close{
+  display: none;
+} */
+  .contained-wrap-h {
+    font-size: large;
+  }
+  /* .custom-dropdown {
+    display: none;
+  } */
+
+  .custom-dropdown.show {
+    height: 100vh;
+    top: 100;
+    display: flex;
+  }
+
+  .hide {
+    display: flex;
+  }
+  .icon-container {
+    display: flex;
+  }
 }
