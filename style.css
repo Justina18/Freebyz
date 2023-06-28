@@ -400,6 +400,18 @@
   background-color: #fff;
   border-radius: 8px;
 }
+.wallet-funder {
+  width: 55%;
+  height: 55%;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+}
 .wallet-funds {
   width: 95%;
   display: flex;
@@ -411,6 +423,15 @@
   border-radius: 8px;
 }
 .wallet-funds button {
+  color: #fff;
+  border: none;
+  outline: none;
+  background-color: #011124;
+  border-radius: 12px;
+  width: 120px;
+  padding: 5px;
+}
+.wallet-funder button {
   color: #fff;
   border: none;
   outline: none;
@@ -623,9 +644,15 @@ tbody tr:hover {
   .custom-dropdown {
     display: none;
   }
+  .wallet-funder {
+    width:65% ;
+    height: 65%;
+    }
+  .wallet-funder h6{
+    font-size: 0.7rem;
+    }
 }
-
-@media (max-width: 425px) {
+@media (max-width: 426px) {
   .sub-menu {
     display: none;
   }
@@ -652,9 +679,10 @@ tbody tr:hover {
   .contained-wrap-h {
     font-size: large;
   }
-  /* .custom-dropdown {
-    display: none;
-  } */
+  .wallet-funder {
+    width:65% ;
+    height: 65%;
+  }
 
   .custom-dropdown.show {
     height: 100vh;
